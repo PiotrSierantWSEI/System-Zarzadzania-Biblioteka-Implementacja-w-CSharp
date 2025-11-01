@@ -30,7 +30,7 @@ Projekt ma podział na:
 │ + Logout(): void                    │
 └──────────┬──────────────────────────┘
            │
-           │ manages
+           │
            ↓
 ┌──────────────────────┐              ┌─────────────────────────┐
 │       User           │              │      Librarian          │
@@ -39,11 +39,11 @@ Projekt ma podział na:
 │ + ID: int            │              │ + ID: int               │
 ├──────────────────────┤              │ - Password: string      │
 │ + Verify(): bool     │◄─────────────┤─────────────────────────┤
-│ + CheckAccount()     │   verifies   │ + VerifyLibrarian()     │
+│ + CheckAccount()     │              │ + VerifyLibrarian()     │
 │ + GetBookInfo()      │              │ + Search(): List<Book>  │
 └──────┬───────────────┘              └──────────┬──────────────┘
        │                                         │
-       │ has                                     │ searches
+       │                                         │ 
        ↓                                         ↓
 ┌──────────────────┐                    ┌──────────────────────┐
 │    Account       │                    │   LibraryDatabase    │
@@ -56,9 +56,9 @@ Projekt ma podział na:
 ├──────────────────┤                    │ + Display()          │
 │ + CalculateFine()│                    │ + Search(string)     │
 └──────────────────┘                    └──────────┬───────────┘
-                                                  │
-       ↑                                          │ manages
-       │ inherits                                 ↓
+                                                   │
+       ↑                                           │ 
+       │                                           ↓
        │                                 ┌───────────────────┐
 ┌──────┴─────┐   ┌─────────┐             │      Book         │
 │  Student   │   │  Staff  │             ├───────────────────┤
